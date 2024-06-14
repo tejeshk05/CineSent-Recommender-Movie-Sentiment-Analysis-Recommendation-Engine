@@ -26,7 +26,7 @@ To run this application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/CineSent-Recommender.git
+   git clone https://github.com/yourusername/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine.git
    cd CineSent-Recommender
    ```
 2. Install dependencies:
