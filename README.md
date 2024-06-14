@@ -84,7 +84,7 @@ https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recom
 ## Authors
 - Your Name - D.Tejesh Kumar
 
-## Support
-- For support, contact dtejesh05k@gmail.com.
+## Contact
+- For any questions or suggestions, please open an issue or contact the repository owner at dtejesh05k@gmail.com.
  
    
