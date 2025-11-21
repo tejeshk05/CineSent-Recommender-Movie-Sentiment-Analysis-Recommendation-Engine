@@ -302,6 +302,10 @@ st.sidebar.info("""
     **CineSent Recommender** analyzes movie reviews from IMDb using 
     Natural Language Processing (NLP) and provides intelligent 
     recommendations based on sentiment analysis.
+
+    ---
+    **Created by:** D. Tejesh Kumar  
+    **GitHub:** [@tejeshk05](https://github.com/tejeshk05)
 """)
 
 # Main Content
