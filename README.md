@@ -1,88 +1,129 @@
-  # CineSent Recommender: Movie Sentiment Analysis & Recommendation Engine 🎥
+## CineSent Recommender: Movie Sentiment Analysis & Recommendation Engine 🎥
 
-CineSent is a Streamlit web application designed to analyze movie sentiment based on IMDb reviews and provide recommendations. It utilizes the OMDb API for movie details and BeautifulSoup for web scraping IMDb reviews. Sentiment analysis is performed using the VADER (Valence Aware Dictionary and sEntiment Reasoner) from NLTK.
+CineSent is a Streamlit web application that analyzes IMDb movie reviews, performs sentiment analysis, and generates intelligent watch recommendations.  
+It uses the OMDb API for movie metadata, BeautifulSoup for scraping IMDb reviews, and VADER (from NLTK) for sentiment scoring.
 
-## Deployment
-- The project is deployed and can be accessed at [CineSent Recommender](https://cinesent-movie-recommender.streamlit.app/).
+## 🚀 Deployment
+- Live app: `https://cinesent-movie-recommender.streamlit.app/`
 
-## Features
+## ✨ Key Features
 
-- **Movie Details Display**: Fetches and displays movie details such as title, year, director, plot, ratings, and more using the OMDb API.
-  
-- **IMDb Reviews Scraping**: Scrapes up to 50 user reviews from IMDb for the specified movie title.
-  
-- **Sentiment Analysis**: Uses VADER to analyze sentiment from each review and categorizes it into positive, negative, or neutral/mixed.
-  
-- **Recommendation Engine**: Based on average sentiment scores and IMDb ratings, provides a recommendation whether to watch the movie, with reasons provided.
+- **Rich movie details**
+  - Fetches title, year, genre, runtime, plot, cast, IMDb rating, votes, awards, etc. from OMDb.
 
-## Getting Started
+- **IMDb reviews scraping**
+  - Scrapes up to a configurable number of user reviews for a given movie from IMDb.
+  - Uses multiple HTML selector strategies to handle IMDb layout changes.
 
-To run this application locally, follow these steps:
+- **Advanced sentiment analysis**
+  - Uses NLTK VADER to compute compound, positive, negative, and neutral sentiment scores.
+  - Classifies each review as Positive, Negative, or Neutral.
+
+- **Recommendation engine**
+  - Combines average sentiment score and user ratings to recommend:
+    - Highly recommended
+    - Not recommended
+    - Mixed / may enjoy
+  - Shows counts of positive/negative/neutral reviews.
+
+- **Interactive data visualizations**
+  - Sentiment distribution pie chart.
+  - Sentiment score histogram with average line.
+  - Rating distribution bar chart (when ratings are available).
+
+- **User-friendly UI & UX**
+  - Modern Streamlit layout with sidebar configuration.
+  - Progress bar and status messages for each analysis step.
+  - Filter and sort reviews by sentiment, rating, or score.
+
+- **Exportable insights**
+  - Download full analysis as CSV.
+  - Download structured JSON with summary + all reviews and scores.
+
+## 🧰 Tech Stack
+
+- **Frontend / App**: Streamlit  
+- **Backend / Logic**: Python  
+- **APIs**: OMDb API, IMDb (scraping)  
+- **Libraries**:
+  - `requests`, `beautifulsoup4`
+  - `nltk` (VADER sentiment)
+  - `pandas`, `plotly`
+
+## 🛠 Getting Started (Local)
 
 ### Prerequisites
 
-- Python 3.6+
-- Pip (Python package installer)
+- Python 3.8+  
+- Pip (Python package manager)
 
-### Installation
+### 1. Clone the repository
 
-1. Clone the repository:
+```bash
+git clone https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine.git
+cd "CineSent Recommender"
+```
 
-   ```bash
-   git clone https://github.com/yourusername/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine.git
-   cd CineSent-Recommender
-   ```
-2. Install dependencies:
+### 2. Create & activate a virtual environment (optional but recommended)
 
-   ```bash
-    pip install -r requirements.txt
+```bash
+python -m venv venv
 
-   ```
-2. Run the Streamlit app:
+# PowerShell
+.\venv\Scripts\Activate.ps1
+```
 
-   ```bash
-    streamlit run app.py
+### 3. Install dependencies
 
-   ```
-4. Open your web browser and go to http://localhost:8501.
+```bash
+pip install -r requirements.txt
+```
 
-## Requirements
-- Python 3.6+
-- Streamlit
-- requests
-- BeautifulSoup4
-- nltk
-- pandas
-- plotly
+### 4. Run the Streamlit app
 
-## How to Use
+```bash
+streamlit run stramlit.py
+```
 
-1. **Get an OMDb API Key:**
-   - Visit the [OMDb API Key page](https://www.omdbapi.com/apikey.aspx).
+Then open your browser at `http://localhost:8501` if it doesn’t open automatically.
+
+## 📌 How to Use
+
+1. **Get an OMDb API key**
+   - Visit the OMDb API key page: `https://www.omdbapi.com/apikey.aspx`
    - Sign up with your email to get a free API key.
-   - Enter the API key in the sidebar of the application.
+   - Enter the key in the sidebar under **OMDb API Key**.
 
-   ![OMDb API Key](https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/692d9a35-d482-4f69-9534-1efeb5a3a81d)
+2. **Configure analysis**
+   - Choose how many IMDb reviews to analyze (slider in the sidebar).
 
+3. **Enter a movie title**
+   - Type a movie name (e.g., “Inception”, “The Matrix”, “Interstellar”) in the input box.
+   - Click **Analyze**.
 
-2. **Enter a Movie Title:**
-   - Type the title of the movie you want to analyze into the designated input field.
+4. **Explore results**
+   - View movie details (poster, plot, cast, ratings, etc.).
+   - Review the sentiment summary and recommendation.
+   - Inspect charts for sentiment and rating distributions.
+   - Scroll through individual reviews with sentiment labels and scores.
+   - Export results as CSV or JSON.
 
-3. **View the Results:**
-   - The application will display detailed movie information fetched from OMDb.
-   - It will scrape IMDb reviews and perform sentiment analysis using VADER.
-   - Based on the sentiment scores and ratings, the app will provide a personalized movie recommendation.
+## 📦 Requirements (summary)
 
-## Built With
-- Streamlit - The web framework used
-- OMDb API - Open Movie Database API
-- Beautiful Soup - HTML parsing library
-- NLTK - Natural Language Toolkit for sentiment analysis
+Main Python dependencies (see `requirements.txt` for exact versions):
+- `streamlit`
+- `requests`
+- `beautifulsoup4`
+- `nltk`
+- `pandas`
+- `plotly`
 
-## Authors
-- Your Name - D.Tejesh Kumar
+## 👤 Author
 
-## Contact
-- For any questions or suggestions, please open an issue or contact the repository owner at dtejesh05k@gmail.com.
- 
-   
+- **Name**: D. Tejesh Kumar  
+- **GitHub**: `https://github.com/tejeshk05`
+
+## 📬 Contact
+
+- For questions, issues, or suggestions, please open a GitHub issue  
+  or email: `dtejesh05k@gmail.com`
