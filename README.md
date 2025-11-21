@@ -4,7 +4,7 @@ CineSent is a Streamlit web application that analyzes IMDb movie reviews, perfor
 It uses the OMDb API for movie metadata, BeautifulSoup for scraping IMDb reviews, and VADER (from NLTK) for sentiment scoring.
 
 ## 🚀 Deployment
-- Live app: `https://cinesent-movie-recommender.streamlit.app/`
+- [Click here to open the Movie Recommender App](https://cinesent-movie-recommender.streamlit.app/)
 
 ## ✨ Key Features
 
