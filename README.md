@@ -46,11 +46,6 @@ To run this application locally, follow these steps:
    ```
 4. Open your web browser and go to http://localhost:8501.
 
-## Screenshots & Videos
-![Screenshot 2024-06-14 200439](https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/6712ec7f-ec16-4161-8907-872f52b5d451)
-![Screenshot 2024-06-14 200539](https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/8bee5221-2f00-45f2-825e-db07c8ee05f4)
-![Screenshot 2024-06-14 200601](https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/af34a0b5-3f69-43a7-a9be-42e876310761)
-
 https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/2ce40d58-293d-4dbe-9bcf-f1600c0b67d1
 
 ## Requirements
