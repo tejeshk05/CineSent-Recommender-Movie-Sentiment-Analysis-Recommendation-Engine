@@ -46,14 +46,14 @@ To run this application locally, follow these steps:
    ```
 4. Open your web browser and go to http://localhost:8501.
 
-https://github.com/tejeshk05/CineSent-Recommender-Movie-Sentiment-Analysis-Recommendation-Engine/assets/166478758/2ce40d58-293d-4dbe-9bcf-f1600c0b67d1
-
 ## Requirements
 - Python 3.6+
 - Streamlit
 - requests
 - BeautifulSoup4
 - nltk
+- pandas
+- plotly
 
 ## How to Use
 
